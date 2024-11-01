@@ -1,4 +1,4 @@
-//Imports
+//imports
 require("dotenv").config();
 const express = require("express");
 const session = require("express-session");
@@ -6,8 +6,13 @@ const mongoose = require("mongoose");
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-//Database connection 
-mongoose.connect(process.env.DB_URL);
+//Database connection
+mongoose.connect(process.env.DB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    ssl: true,
+    tls: true
+});
 const db = mongoose.connection;
 db.on("error", (error) => console.log(error));
 db.once("open", () => console.log("connected to the database!"));
@@ -15,7 +20,6 @@ db.once("open", () => console.log("connected to the database!"));
 //middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(
     session({
         secret: "Secret key!",
@@ -23,13 +27,11 @@ app.use(
         resave: false,
     })
 );
-
 app.use((req, res, next) => {
     res.locals.message = req.session.message;
     delete req.session.message;
     next();
 });
-
 app.use(express.static('uploads'));
 
 //set template engine
