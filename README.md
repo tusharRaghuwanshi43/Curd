@@ -1,6 +1,6 @@
-***************************************************************************************** Title- CRUD Application ************************************************************************************************
+********** Title- CRUD Application **********
 
-A CRUD app is a type of software application that performs basic operations on data. CRUD stands for Create, Read, Update, and Delete, which represent the four basic functions that can be performed on persistent storage. These operations allow users to interact with and manage data within a system.
+A CRUD app is a software application that performs basic operations on data. CRUD stands for Create, Read, Update, and Delete, which represent the four basic functions that can be performed on persistent storage. These operations allow users to interact with and manage data within a system.
 
 CRUD stands for
 C – Create
@@ -27,12 +27,16 @@ These are the actions I'm carrying out in my application for CURD (Employee Deta
 Here's a quick rundown of every function in my CRUD application:
 
 
-Step 1: To access the operation on my program, click on the three dots button.
+Step 1: To access the operation on my application, click on the three dots button.
 
-Step 2: To add information to the database by clicking the "Add Users" button.
+Step 2: Add information to the database by clicking the "Add Users" button.
 
 Step 3: You are redirected to the "New User" page.
 
-Step 4: To add the new users to the database, click that button.
+Step 4: Click that button to add the new users to the database.
 
-Step 5: Click on the icons that appear in the action field to update or remove data from the database.
+Step 5: You will get a form for inserting employee data into the server.
+
+Step 5: Data will be added to the database and you will be redirected to the "Home Page".
+
+Step 6: Click on the icons that appear in the action field to update or remove data from the database.
