@@ -4,8 +4,8 @@ const userSchema = new mongoose.Schema({
     email: { type: String, required: true, },
     phone: { type: String, required: true, },
     id: { type: String, required: true, },
-    age: { type: String, required: true, },
-    salary: { type: String, required: true, },
+    age: { type: Number, required: true, },
+    salary: { type: Number, required: true, },
     joining_date: { type: String, required: true, },
     created: { type: Date, required: true, default: Date.now, }
 });
