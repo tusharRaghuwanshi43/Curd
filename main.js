@@ -13,7 +13,7 @@ db.on("error", (error) => console.log(error));
 db.once("open", () => console.log("connected to the database!"));
 
 //middleware
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(
