@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../modules/users");
-const users = require("../modules/users");
 
 
 // Inserting the data of user into database (mongoDB)
